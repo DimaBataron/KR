@@ -24,6 +24,7 @@ int main (int argc,char *argv[]) {
 	while(fscanf(fp,"%s",wordF)!=EOF) //t-количество прочитанных полей
 		comp(keytab,wordF,kol);
 	outStr(keytab,kol);
+	fclose(fp);
 }
 struct key *keyret() // функция иницилизирующая структуру возвращает адрес
 { // статическая значит что остается в памяти
