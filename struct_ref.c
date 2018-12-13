@@ -24,7 +24,8 @@ void main()
 	struct tnode *root;
 	fp=fopenCon("C:\\1.txt","rt");
 	root=NULL;
-	while((fscanf(fp,"%s",c))!=EOF)
+	while((fscanf(fp,"%s",c))!=EOF) // сохраняется ли укзатель позиции в файле
+		//при чтении слов из функции
 	{
 		root=tree(root,c);
 		treeprint(root);
